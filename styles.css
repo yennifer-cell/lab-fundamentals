@@ -1,0 +1,122 @@
+/* Target the navigation bar using a class selector */
+.main-nav {
+    background-color: #333;      /* Set background color to #333 */
+    font-size: 1.2em;            /* Set font size to 1.2em */
+    padding: 1em;                /* Add padding of 1em */
+    text-align: center;          /* Center-align the text */
+    position: fixed;             /* Set position to fixed */
+    width: 100%;                 /* Set width to 100% */
+    top: 0;                      /* Set top to 0 */
+    z-index: 1000;               /* Set z-index to 1000 */
+}
+/* For the unordered list within the navigation bar */
+.main-nav ul {
+    list-style: none;            /* Set list-style to none */
+    margin: 0;                   /* Set margin to 0 */
+    padding: 0;                  /* Set padding to 0 */
+}
+
+/* For each list item in the navigation bar */
+.main-nav li {
+    display: inline;             /* Set them to display inline */
+    margin: 0 1em;               /* Add margin of 0 1em */
+}
+
+/* Style the anchor tags within the list items */
+.main-nav li a {
+    color: #fff;                 /* Set the text color to #fff */
+    text-decoration: none;       /* Optional: removes underline */
+}
+/* Add padding to the top of the main content to ensure 
+   it is not hidden behind the fixed navigation bar */
+main {
+    padding-top: 5em;
+}
+
+/* For each section within the main content */
+main section {
+    padding: 2em 1em;
+    text-align: center; /* Center-align the text */
+}
+
+/* Styling for the Home Section specifically */
+#home h1 {
+    font-size: 2.5em;       /* Increase the font size of the main heading */
+    margin-bottom: 0.5em;   /* Add margin-bottom of 0.5em */
+}
+
+.home p {
+    font-size: 1.2em;       /* Set the paragraph font size to 1.2em */
+    color: #666;            /* Set the paragraph color to #666 */
+}
+/* 1. Flexbox Layout for the Portfolio Container */
+.work {
+    display: flex;                  /* Set display to flex */
+    flex-wrap: wrap;               /* Set flex-wrap to wrap */
+    justify-content: space-around; /* Justify content to space items around */
+    padding: 1em;                  /* Add padding of 1em */
+}
+
+/* 2. Style each Portfolio Item Card */
+.portfolio-item {
+    background-color: #fff;        /* Set background color to #fff */
+    border: 1px solid #ddd;        /* Add border of 1px solid #ddd */
+    margin: 1em;                   /* Add margin of 1em around each item */
+    padding: 1em;                  /* Add padding of 1em on all sides */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply box shadow */
+    width: 30%;                    /* Set the width to 30% */
+    box-sizing: border-box;        /* Set box-sizing to border-box */
+    transition: transform 0.3s;    /* Transition for transform property */
+}
+
+/* Hover effect to make the cards interactive */
+.portfolio-item:hover {
+    transform: translateY(-5px);   /* Subtle lift on hover */
+}
+
+/* 3. Style Headings within Portfolio Items */
+.portfolio-item h3 {
+    font-weight: bold;             /* Make the text bold */
+    margin-bottom: 0.5em;          /* Add margin-bottom of 0.5em */
+}
+
+/* 4. Style Paragraphs within Portfolio Items */
+.portfolio-item p {
+    margin-bottom: 0.5em;          /* Add margin-bottom of 0.5em */
+    color: #666;                   /* Set the color to #666 */
+}
+
+/* 5. Style Images within Portfolio Items */
+.portfolio-item img {
+    width: 100%;                   /* Set the width to 100% */
+    height: auto;                  /* Maintain aspect ratio */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Apply box shadow */
+    border-radius: 4px;            /* Optional: slight rounding for a modern look */
+}
+
+/* Responsive adjustment for 2025: 
+   Ensures cards stack on mobile devices */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;               /* Full width on small screens */
+    }
+}
+
+/* Apply a scaling transformation to portfolio items when hovered over */
+.portfolio-item:hover {
+    transform: scale(1.05); /* Increases the size of the card by 5% */
+}
+
+/* Target the footer using an ID selector */
+#main-footer {
+    background-color: #222;    /* Set the background color to #222 */
+    color: #fff;               /* Set the text color to #fff */
+    padding: 2em;              /* Add padding of 2em */
+    text-align: center;        /* Center-align the text */
+    position: relative;        /* Set the position to relative */
+    bottom: 0;                 /* Set the bottom to 0 */
+    width: 100%;               /* Set the width to 100% */
+}
+
+
+
